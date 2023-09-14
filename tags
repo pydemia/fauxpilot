@@ -1,0 +1,123 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CONFIG_TEMPLATE_PATH	fauxpilot/converter/triton_config_gen.py	/^CONFIG_TEMPLATE_PATH = os.path.join(SCRIPT_DIR, 'config_template.pbtxt')$/;"	v
+CONFIG_TEMPLATE_PATH	fauxpilot/python_backend/init_model.py	/^CONFIG_TEMPLATE_PATH = os.path.join(SCRIPT_DIR, 'config_template.pbtxt')$/;"	v
+CodeGenProxy	fauxpilot/copilot_proxy/utils/codegen.py	/^class CodeGenProxy:$/;"	c
+FauxPilotException	fauxpilot/copilot_proxy/utils/errors.py	/^class FauxPilotException(Exception):$/;"	c
+ModelType	fauxpilot/copilot_proxy/models.py	/^ModelType = constr(regex="^(fastertransformer|py-model)$")$/;"	v
+OpenAIinput	fauxpilot/copilot_proxy/models.py	/^class OpenAIinput(BaseModel):$/;"	c
+SCRIPT_DIR	fauxpilot/converter/triton_config_gen.py	/^SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))$/;"	v
+SCRIPT_DIR	fauxpilot/python_backend/init_model.py	/^SCRIPT_DIR = Path(__file__).parent$/;"	v
+TokensExceedsMaximum	fauxpilot/copilot_proxy/utils/codegen.py	/^    class TokensExceedsMaximum(Exception):$/;"	c	class:CodeGenProxy
+TritonPythonModel	fauxpilot/python_backend/model.py	/^class TritonPythonModel:$/;"	c
+__call__	fauxpilot/copilot_proxy/utils/codegen.py	/^    def __call__(self, data: dict):$/;"	m	class:CodeGenProxy	file:
+__init__	fauxpilot/copilot_proxy/utils/codegen.py	/^    def __init__(self, host: str = 'triton', port: int = 8001, verbose: bool = False):$/;"	m	class:CodeGenProxy
+__init__	fauxpilot/copilot_proxy/utils/errors.py	/^    def __init__(self, message: str, error_type: Optional[str] = None, param: Optional[str] = None,$/;"	m	class:FauxPilotException
+activation_function	fauxpilot/converter/codegen_gptj_convert.py	/^    activation_function=cg_config.activation_function,$/;"	v
+app	fauxpilot/copilot_proxy/app.py	/^app = FastAPI($/;"	v
+args	fauxpilot/converter/codegen_gptj_convert.py	/^args = parser.parse_args()$/;"	v
+args	fauxpilot/converter/huggingface_gptj_convert.py	/^    args = parser.parse_args()$/;"	v
+args	fauxpilot/converter/triton_config_gen.py	/^args = parser.parse_args()$/;"	v
+args	fauxpilot/python_backend/init_model.py	/^args = parser.parse_args()$/;"	v
+attn_pdrop	fauxpilot/converter/codegen_gptj_convert.py	/^    attn_pdrop=cg_config.attn_pdrop,$/;"	v
+bos_token_id	fauxpilot/converter/codegen_gptj_convert.py	/^    bos_token_id=cg_config.bos_token_id,$/;"	v
+cg_config	fauxpilot/converter/codegen_gptj_convert.py	/^cg_config = cg_model.config$/;"	v
+cg_model	fauxpilot/converter/codegen_gptj_convert.py	/^cg_model = CodeGenForCausalLM.from_pretrained(args.code_model, torch_dtype="auto")$/;"	v
+check_dep	fauxpilot/setup.sh	/^function check_dep(){$/;"	f
+codegen	fauxpilot/copilot_proxy/app.py	/^codegen = CodeGenProxy($/;"	v
+completions	fauxpilot/copilot_proxy/app.py	/^async def completions(data: OpenAIinput):$/;"	f
+config	fauxpilot/converter/codegen_gptj_convert.py	/^config = GPTJConfig($/;"	v
+config	fauxpilot/converter/triton_config_gen.py	/^config = GPTJConfig.from_pretrained(args.hf_model_dir)$/;"	v
+config	fauxpilot/python_backend/init_model.py	/^config = template.substitute($/;"	v
+config_path	fauxpilot/converter/triton_config_gen.py	/^config_path = os.path.join(model_dir, 'fastertransformer', 'config.pbtxt')$/;"	v
+curdir	fauxpilot/tests/python_backend/test_setup.py	/^curdir = Path(__file__).parent$/;"	v
+default	fauxpilot/converter/huggingface_gptj_convert.py	/^                        default=4)$/;"	v
+description	fauxpilot/copilot_proxy/app.py	/^    description="This is an attempt to build a locally hosted version of GitHub Copilot. It uses the SalesForce CodeGen"$/;"	v
+dir_path	fauxpilot/converter/huggingface_gptj_convert.py	/^dir_path = os.path.dirname(os.path.realpath(__file__))$/;"	v
+docs_url	fauxpilot/copilot_proxy/app.py	/^    docs_url="\/",$/;"	v
+embd_pdrop	fauxpilot/converter/codegen_gptj_convert.py	/^    embd_pdrop=cg_config.embd_pdrop,$/;"	v
+embed_dim	fauxpilot/converter/codegen_gptj_convert.py	/^embed_dim = config.n_embd$/;"	v
+enter_input	fauxpilot/tests/python_backend/test_setup.py	/^def enter_input(proc: pexpect.spawn, expect: str, input_s: str, timeout: int = 5) -> str:$/;"	f
+eos_token_id	fauxpilot/converter/codegen_gptj_convert.py	/^    eos_token_id=cg_config.eos_token_id,$/;"	v
+execute	fauxpilot/python_backend/model.py	/^    def execute(self, requests):$/;"	m	class:TritonPythonModel
+fastertransformer_backend	fauxpilot/setup.sh	/^function fastertransformer_backend(){$/;"	f
+fauxpilot_handler	fauxpilot/copilot_proxy/app.py	/^async def fauxpilot_handler(request: Request, exc: FauxPilotException):$/;"	f
+generate	fauxpilot/copilot_proxy/utils/codegen.py	/^    def generate(self, data):$/;"	m	class:CodeGenProxy
+get_bool	fauxpilot/python_backend/model.py	/^        def get_bool(x):$/;"	f	function:TritonPythonModel.initialize
+get_copilot_token	fauxpilot/copilot_proxy/app.py	/^def get_copilot_token():$/;"	f
+get_weight_data_type	fauxpilot/converter/huggingface_gptj_convert.py	/^def get_weight_data_type(data_type):$/;"	f
+gptj_model	fauxpilot/converter/codegen_gptj_convert.py	/^gptj_model = GPTJForCausalLM(config).half()$/;"	v
+help	fauxpilot/converter/codegen_gptj_convert.py	/^                    help='which SalesForce model to convert'$/;"	v
+help	fauxpilot/converter/huggingface_gptj_convert.py	/^                        help="output weight data type")$/;"	v
+host	fauxpilot/copilot_proxy/app.py	/^    host=os.environ.get("TRITON_HOST", "triton"),$/;"	v
+initialize	fauxpilot/python_backend/model.py	/^    def initialize(self, args):$/;"	m	class:TritonPythonModel
+initializer_range	fauxpilot/converter/codegen_gptj_convert.py	/^    initializer_range=cg_config.initializer_range,$/;"	v
+json	fauxpilot/copilot_proxy/utils/errors.py	/^    def json(self):$/;"	m	class:FauxPilotException
+layer_norm_epsilon	fauxpilot/converter/codegen_gptj_convert.py	/^    layer_norm_epsilon=cg_config.layer_norm_epsilon,$/;"	v
+load_test_env	fauxpilot/tests/python_backend/test_setup.py	/^def load_test_env():$/;"	f
+max_seq_len	fauxpilot/converter/triton_config_gen.py	/^max_seq_len = config.n_positions$/;"	v
+model_dir	fauxpilot/converter/triton_config_gen.py	/^model_dir = os.path.join(args.model_store, f'{model_name}-{args.num_gpu}gpu')$/;"	v
+model_dir_path	fauxpilot/python_backend/init_model.py	/^model_dir_path = Path(os.path.join(Path(args.model_dir), f"py-{args.org_name}-{args.model_name}\/py-model\/1"))$/;"	v
+model_name	fauxpilot/converter/triton_config_gen.py	/^model_name = os.path.basename(args.hf_model_dir)$/;"	v
+model_name	fauxpilot/python_backend/init_model.py	/^    model_name=args.model_name,$/;"	v
+n_embd	fauxpilot/converter/codegen_gptj_convert.py	/^    n_embd=cg_config.n_embd,$/;"	v
+n_head	fauxpilot/converter/codegen_gptj_convert.py	/^    n_head=cg_config.n_head,$/;"	v
+n_inner	fauxpilot/converter/codegen_gptj_convert.py	/^    n_inner=cg_config.n_inner,$/;"	v
+n_layer	fauxpilot/converter/codegen_gptj_convert.py	/^    n_layer=cg_config.n_layer,$/;"	v
+n_positions	fauxpilot/converter/codegen_gptj_convert.py	/^    n_positions=cg_config.n_positions,$/;"	v
+non_streamed_response	fauxpilot/copilot_proxy/utils/codegen.py	/^    def non_streamed_response(self, completion, choices) -> str:$/;"	m	class:CodeGenProxy
+org_name	fauxpilot/python_backend/init_model.py	/^    org_name=args.org_name,$/;"	v
+params	fauxpilot/converter/triton_config_gen.py	/^params = {}$/;"	v
+parser	fauxpilot/converter/codegen_gptj_convert.py	/^parser = argparse.ArgumentParser('Convert SalesForce CodeGen model to GPT-J')$/;"	v
+parser	fauxpilot/converter/huggingface_gptj_convert.py	/^    parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)$/;"	v
+parser	fauxpilot/converter/triton_config_gen.py	/^parser = argparse.ArgumentParser('Create Triton config files for CodeGen models')$/;"	v
+parser	fauxpilot/python_backend/init_model.py	/^parser = argparse.ArgumentParser()$/;"	v
+pb2torch	fauxpilot/python_backend/model.py	/^def pb2torch(request, name):$/;"	f
+port	fauxpilot/copilot_proxy/app.py	/^    port=os.environ.get("TRITON_PORT", 8001),$/;"	v
+prepare_tensor	fauxpilot/copilot_proxy/utils/codegen.py	/^    def prepare_tensor(name: str, tensor_input):$/;"	m	class:CodeGenProxy
+python_backend	fauxpilot/setup.sh	/^function python_backend(){$/;"	f
+random_completion_id	fauxpilot/copilot_proxy/utils/codegen.py	/^    def random_completion_id():$/;"	m	class:CodeGenProxy
+rebased_model_dir	fauxpilot/converter/triton_config_gen.py	/^    rebased_model_dir = model_dir$/;"	v
+rebased_model_dir	fauxpilot/converter/triton_config_gen.py	/^    rebased_model_dir = os.path.join(args.rebase, f'{model_name}-{args.num_gpu}gpu')$/;"	v
+rebased_weights_path	fauxpilot/converter/triton_config_gen.py	/^    rebased_weights_path = os.path.join(args.rebase, 'fastertransformer', f'{version}', f'{args.num_gpu}-gpu')$/;"	v
+rebased_weights_path	fauxpilot/converter/triton_config_gen.py	/^    rebased_weights_path = weights_path$/;"	v
+replace	fauxpilot/converter/codegen_gptj_convert.py	/^def replace(model, weights, model_name):$/;"	f
+replace_by_name	fauxpilot/converter/codegen_gptj_convert.py	/^def replace_by_name(dest_model, src_model, old_name, new_name):$/;"	f
+resid_pdrop	fauxpilot/converter/codegen_gptj_convert.py	/^    resid_pdrop=cg_config.resid_pdrop,$/;"	v
+root	fauxpilot/tests/python_backend/test_setup.py	/^root = curdir.parent.parent$/;"	v
+rotary_dim	fauxpilot/converter/codegen_gptj_convert.py	/^    rotary_dim=cg_config.rotary_dim,$/;"	v
+round_up	fauxpilot/converter/triton_config_gen.py	/^def round_up(x, multiple):$/;"	f
+run_common_setup_steps	fauxpilot/tests/python_backend/test_setup.py	/^def run_common_setup_steps(n_gpus: int = 0) -> pexpect.spawn:$/;"	f
+run_inference	fauxpilot/tests/python_backend/test_setup.py	/^def run_inference($/;"	f
+scale_attn_weights	fauxpilot/converter/codegen_gptj_convert.py	/^    scale_attn_weights=cg_config.scale_attn_weights,$/;"	v
+setup_module	fauxpilot/tests/python_backend/test_setup.py	/^def setup_module():$/;"	f
+showhelp	fauxpilot/launch.sh	/^function showhelp () {$/;"	f
+split_and_convert	fauxpilot/converter/huggingface_gptj_convert.py	/^def split_and_convert(args):$/;"	f
+split_and_convert_process	fauxpilot/converter/huggingface_gptj_convert.py	/^def split_and_convert_process(i, saved_dir, factor, key, val):$/;"	f
+streamed_response	fauxpilot/copilot_proxy/utils/codegen.py	/^    def streamed_response(self, completion, choices):$/;"	m	class:CodeGenProxy
+swagger_ui_parameters	fauxpilot/copilot_proxy/app.py	/^    swagger_ui_parameters={"defaultModelsExpandDepth": -1}$/;"	v
+teardown_module	fauxpilot/tests/python_backend/test_setup.py	/^def teardown_module():$/;"	f
+template	fauxpilot/converter/triton_config_gen.py	/^    template = Template(f.read())$/;"	v
+template	fauxpilot/python_backend/init_model.py	/^    template = Template(f.read())$/;"	v
+test_models_dir	fauxpilot/tests/python_backend/test_setup.py	/^test_models_dir = curdir.joinpath("models")$/;"	v
+test_python_backend	fauxpilot/tests/python_backend/test_setup.py	/^def test_python_backend(n_gpus: int):$/;"	f
+title	fauxpilot/copilot_proxy/app.py	/^    title="FauxPilot",$/;"	v
+to_word_list_format	fauxpilot/copilot_proxy/utils/codegen.py	/^    def to_word_list_format(word_dict, tokenizer):$/;"	m	class:CodeGenProxy
+tokenizer	fauxpilot/converter/triton_config_gen.py	/^tokenizer = AutoTokenizer.from_pretrained(args.tokenizer)$/;"	v
+torch2pb	fauxpilot/python_backend/model.py	/^def torch2pb(name, tensor):$/;"	f
+torch_dtype	fauxpilot/converter/codegen_gptj_convert.py	/^    torch_dtype=cg_config.torch_dtype,$/;"	v
+trim_with_stopwords	fauxpilot/copilot_proxy/utils/codegen.py	/^    def trim_with_stopwords(output: str, stopwords: list) -> str:$/;"	m	class:CodeGenProxy
+triton_config	fauxpilot/converter/triton_config_gen.py	/^triton_config = template.substitute(params)$/;"	v
+use_auto_device_map	fauxpilot/python_backend/init_model.py	/^    use_auto_device_map=args.use_auto_device_map,$/;"	v
+use_cache	fauxpilot/converter/codegen_gptj_convert.py	/^    use_cache=cg_config.use_cache,$/;"	v
+use_half	fauxpilot/python_backend/init_model.py	/^    use_half=args.use_half,$/;"	v
+use_int8	fauxpilot/python_backend/init_model.py	/^    use_int8=args.use_int8,$/;"	v
+uvicorn_logger	fauxpilot/copilot_proxy/config/log_config.py	/^uvicorn_logger = {$/;"	v
+verbose	fauxpilot/copilot_proxy/app.py	/^    verbose=os.environ.get("TRITON_VERBOSITY", False)$/;"	v
+version	fauxpilot/converter/triton_config_gen.py	/^version = '1'$/;"	v
+vocab_size	fauxpilot/converter/codegen_gptj_convert.py	/^    vocab_size=cg_config.vocab_size,$/;"	v
+weights_path	fauxpilot/converter/triton_config_gen.py	/^weights_path = os.path.join(model_dir, 'fastertransformer', f'{version}', f'{args.num_gpu}-gpu')$/;"	v

@@ -1,0 +1,3 @@
+[submodule "fauxpilot"]
+	path = fauxpilot
+	url = https://github.com/fauxpilot/fauxpilot
